@@ -1,0 +1,123 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  color : $white_typo;
+}
+
+//homepage
+#homepage{
+  background-color: white;
+}
+
+// NAVIGATION
+.navBar{
+    background-color: $dark_blue;
+    height: 45px;
+    a:hover{
+      color:$mustard;
+      font-weight: 600;
+    }
+    .divLogo{
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .menuLogo {
+        font-weight: 900;
+        font-size: 20px;
+        color:$white_typo;
+        padding: 0px;
+      }
+    }
+
+    .divMenu{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      ul{
+        display: flex;
+        .menuTitle {
+        font-size: 12px;
+        font-weight: lighter;
+        color : $white_typo;
+        padding-bottom: 5px;
+
+        }
+      }
+    }
+
+    .divAdmin{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      a{
+        font-size: 12px;
+        font-weight: lighter;
+        color : $white_typo;
+        padding-bottom: 5px;
+      }
+    }
+
+  }
+
+
+
+
+
+.divLogo, .divMenu, .divAdmin{
+  height: 100%;
+  padding: 0px;
+}
+
+
+
+
+//THREE BLOCS
+.threeBlocs{
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 200px;
+
+  .divQsn{
+    background-color: $grey_qsn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    :hover{
+    cursor: pointer;
+    }
+    a{
+      color: #fff;
+    }
+  }
+
+  .divSignIn{
+    background-color:$grey_sign;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    :hover{
+    cursor: pointer;
+    }
+    a{
+      color: #fff;
+    }
+  }
+
+  .divSignUp{
+    background-color: $grey_up;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    :hover{
+    cursor: pointer;
+    }
+    a{
+      color: #fff;
+    }
+  }
+}

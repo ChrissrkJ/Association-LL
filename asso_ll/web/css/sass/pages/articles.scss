@@ -1,0 +1,83 @@
+.articleListPage{
+  .inputArticlePage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  margin-top: 15px;
+  select{
+    width: 150px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    background-color: $medium_blue;
+  }
+    .btnNewArticle{
+    text-align: center;
+    border: 1px solid $dark_blue;
+    height: 30px;
+    width: 250px;
+    border-radius: 15px;
+    font-weight: 600;
+    a{
+      color: $dark_blue;
+      text-decoration: none;
+    }
+  }
+
+
+  ///TABLE
+
+  i{
+    margin-left: 15px;
+    font-size: 18px;
+  }
+}
+
+.addArticlePage{
+  color: white;
+  width: 50%;
+  margin-top: 15px;
+  text-align: center;
+  background-color: $medium_blue;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h5 {
+    margin-top: 15px;
+    font-weight: 700;
+  }
+  label {
+    color: white;
+  }
+
+  .addArticleForm{
+
+    margin-top: 15px;
+    width: 50%;
+    align-self: center;
+    input, .inputArticle,.inputImage {
+      color: white;
+      margin-top: 10px;
+      border: 1px solid white;
+      border-radius: 15px;
+      background-color: $medium_blue;
+    }
+    .inputArticle {
+      width: 100%;
+      height: 200px;
+    }
+
+    select {
+      color: white;
+      text-align: center;
+      width: 30%;
+      margin-top: 10px;
+      border: 1px solid white;
+      border-radius: 10px;
+      background-color: $medium_blue;
+    }
+  }
+}

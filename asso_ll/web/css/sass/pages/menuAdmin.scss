@@ -1,0 +1,47 @@
+// ///HEADER PAGE ADMIN
+// .adminPageHead{
+//   margin-top: 15px;
+//   display: flex;
+//   flex-direction: row;
+//
+//   img{
+//     width: 80px;
+//   }
+//
+//   .avatarAdmin{
+//     padding: 0px;
+//     text-align: right;
+//   }
+//
+//   .hiAdmin{
+//     display: flex;
+//     align-self: flex-end;
+//     p{
+//       margin: 0px;
+//     }
+//   }
+//
+//   .navAdmin{
+//     align-self: flex-end;
+//     ul {
+//       margin-bottom: 0px;
+//       display: flex;
+//       justify-content: flex-end;
+//       li {
+//         list-style: none;
+//         .menuAdmin{
+//           font-size: 12px;
+//           padding-bottom: 0px;
+//           color : $dark_blue;
+//           a:link { color: $adark_blue; } /* liens non visités */
+//           a:visited { color: $Light_blue; } /* liens visités */
+//           a:hover { background: $grey_blue; } /* survol du pointeur */
+//           a:active { color: $mustard; } /* liens actifs */
+//         }
+//       }
+//     }
+//     hr{
+//       border: 1px solid red;
+//     }
+//   }
+// }

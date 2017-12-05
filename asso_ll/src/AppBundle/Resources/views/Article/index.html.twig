@@ -1,0 +1,57 @@
+
+{% block body %}
+{% include "AppBundle:Admin:menuAdmin.html.twig" %}
+<div class="container articleListPage">
+  <div class="inputArticlePage">
+  <div class="form-group">
+      <select name="articleFilter">
+      <option value="0" selected>filtrer ...</option>
+      <option value="1">Mes articles</option>
+      <option value="2">Tous les articles</option>
+    </select>
+    </div>
+
+    <div class="form-group btnNewArticle">
+      <a href="{{path ('article_add')}}"> Ajouter un nouvel article</a>
+    </div>
+  </div>
+
+
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>image à la une</th>
+        <th>titre</th>
+        <th>publié le</th>
+        <th>auteur</th>
+        <th>actions</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+      {% for a in articles %}
+      <tr>
+        <td><img src="{{ asset('images/article/') ~ a.image}}" alt="imgUne" classe="imgArticle" width="50px"></td>
+        <td>{{a.title}}</td>
+        <td>{{a.publiDate|date('d-m-Y')}}</td>
+        <td>{{a.author}}</td>
+        <td>
+          <a href="{{path ('article_update',{'id':a.id}) }}">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+          </a>
+          <a href="{{path ('article_delete',{'id':a.id}) }}">
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </a>
+        </td>
+      </tr>
+
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+
+</div>
+
+{% endblock %}

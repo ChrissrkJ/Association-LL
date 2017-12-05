@@ -1,0 +1,49 @@
+
+{% block body %}
+
+{% include "AppBundle:Admin:menuAdmin.html.twig" %}
+
+
+
+<div class="row">
+  <div class="container listAdminTable">
+    <div class="btnAddAdmin">
+
+      <a href="{{path('admin_add')}}" ><i class="fa fa-plus-square" aria-hidden="true">  <span>ajouter un administrateur</span></i></a>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <th>prénom</th>
+        <th>nom</th>
+        <th>mail</th>
+        <th>téléphone</th>
+        <th>avatar</th>
+        <th>actions</th>
+      </thead>
+      <tbody>
+        {% for ad in  admins %}
+        <tr>
+          <td>{{ ad.firstname}}</td>
+          <td>{{ ad.lastname}}</td>
+          <td>{{ ad.mail}}</td>
+          <td>{{ ad.phoneNumber}}</td>
+          <td> <img src="{{ asset('images/admin/') ~ ad.avatar}}" alt="avatar" class="avatarListAdmin" width="50px" height="50px"></td>
+          <td class="tableAction">
+            <a href="{{path ('admin_update',{'id':ad.id}) }}" >
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+            </a>
+            <a href="{{path ('admin_delete',{'id':ad.id}) }}">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </a>
+
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+{% endblock %}

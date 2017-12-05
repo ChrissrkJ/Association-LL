@@ -1,0 +1,339 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff; }
+
+#homepage {
+  background-color: white; }
+
+.navBar {
+  background-color: #1a4577;
+  height: 45px; }
+  .navBar a:hover {
+    color: #d7ba66;
+    font-weight: 600; }
+  .navBar .divLogo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; }
+    .navBar .divLogo .menuLogo {
+      font-weight: 900;
+      font-size: 20px;
+      color: #fff;
+      padding: 0px; }
+  .navBar .divMenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end; }
+    .navBar .divMenu ul {
+      display: flex; }
+      .navBar .divMenu ul .menuTitle {
+        font-size: 12px;
+        font-weight: lighter;
+        color: #fff;
+        padding-bottom: 5px; }
+  .navBar .divAdmin {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end; }
+    .navBar .divAdmin a {
+      font-size: 12px;
+      font-weight: lighter;
+      color: #fff;
+      padding-bottom: 5px; }
+
+.divLogo, .divMenu, .divAdmin {
+  height: 100%;
+  padding: 0px; }
+
+.threeBlocs {
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 200px; }
+  .threeBlocs .divQsn {
+    background-color: #91a6c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%; }
+    .threeBlocs .divQsn :hover {
+      cursor: pointer; }
+    .threeBlocs .divQsn a {
+      color: #fff; }
+  .threeBlocs .divSignIn {
+    background-color: #55606c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%; }
+    .threeBlocs .divSignIn :hover {
+      cursor: pointer; }
+    .threeBlocs .divSignIn a {
+      color: #fff; }
+  .threeBlocs .divSignUp {
+    background-color: #374f5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%; }
+    .threeBlocs .divSignUp :hover {
+      cursor: pointer; }
+    .threeBlocs .divSignUp a {
+      color: #fff; }
+
+* {
+  color: #1a4577; }
+
+.adminSignIn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+.signAdminBloc {
+  background-color: #1a4577;
+  color: #fff;
+  margin-top: 50px;
+  width: 40%;
+  align-self: center; }
+  .signAdminBloc .form-group {
+    display: flex;
+    flex-direction: column; }
+    .signAdminBloc .form-group input {
+      align-self: center; }
+
+.mailInput_sia, .passwordInput_sia {
+  border-radius: 20px;
+  height: 35px;
+  border: 1px solid white;
+  background-color: #1a4577;
+  text-align: center;
+  width: 50%; }
+
+.btn_sia {
+  background-color: #d7ba66;
+  color: #1a4577;
+  font-weight: bold;
+  border-radius: 20px;
+  width: 50%;
+  align-self: center; }
+
+.adminPageHead {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row; }
+  .adminPageHead img {
+    width: 80px; }
+  .adminPageHead .avatarAdmin {
+    padding: 0px;
+    text-align: right; }
+  .adminPageHead .hiAdmin {
+    display: flex;
+    align-self: flex-end; }
+    .adminPageHead .hiAdmin p {
+      margin: 0px; }
+  .adminPageHead .navAdmin {
+    align-self: flex-end; }
+    .adminPageHead .navAdmin ul {
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: flex-end; }
+      .adminPageHead .navAdmin ul li {
+        list-style: none; }
+        .adminPageHead .navAdmin ul li .menuAdmin {
+          font-size: 12px;
+          padding-bottom: 0px;
+          color: #1a4577; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #1a4577;
+  background-image: linear-gradient(to right, #11609a, #1a4577, #11609a);
+  margin-top: 5px; }
+
+.adminPageBody {
+  margin-top: 15px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start; }
+  .adminPageBody .menuAdmin {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    padding: 0px; }
+  .adminPageBody .blockArticle {
+    background-color: #65c2cc;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .adminPageBody .blockArticle :hover {
+      color: #d7ba66;
+      font-weight: 600;
+      font-size: 30px; }
+  .adminPageBody .blockVolunteer {
+    background-color: #00949a;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .adminPageBody .blockVolunteer :hover {
+      color: #d7ba66;
+      font-weight: 600;
+      font-size: 30px; }
+  .adminPageBody .blockFamily {
+    background-color: #11609a;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .adminPageBody .blockFamily :hover {
+      color: #d7ba66;
+      font-weight: 600;
+      font-size: 30px; }
+  .adminPageBody .blockAdmin {
+    background-color: #11609a;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .adminPageBody .blockAdmin :hover {
+      color: #d7ba66;
+      font-weight: 600;
+      font-size: 30px; }
+
+.listAdminTable .btnAddAdmin {
+  margin: 10px; }
+  .listAdminTable .btnAddAdmin a i {
+    color: #87b14e; }
+    .listAdminTable .btnAddAdmin a i span {
+      font-family: 'Montserrat', sans-serif;
+      color: #87b14e; }
+.listAdminTable table th {
+  text-align: center; }
+.listAdminTable table tbody .tableAction {
+  display: flex;
+  justify-content: space-around;
+  color: white; }
+  .listAdminTable table tbody .tableAction a :hover {
+    font-size: 20px;
+    color: #d7ba66; }
+  .listAdminTable table tbody .tableAction a i {
+    color: #1a4577;
+    font-size: 18px; }
+.listAdminTable table tbody td {
+  text-align: center; }
+  .listAdminTable table tbody td img {
+    width: 50px; }
+
+.addAdminPage {
+  width: 50%;
+  background-color: #1a4577;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .addAdminPage .addAdminForm {
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .addAdminPage .addAdminForm .form-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px; }
+      .addAdminPage .addAdminForm .form-group label {
+        color: #fff; }
+      .addAdminPage .addAdminForm .form-group input {
+        color: white;
+        text-align: center;
+        background-color: #1a4577;
+        border: 1px solid white;
+        border-radius: 20px;
+        height: 40px; }
+      .addAdminPage .addAdminForm .form-group .btn {
+        background-color: white;
+        border-radius: 20px;
+        color: #1a4577;
+        font-weight: 600; }
+
+.articleListPage {
+  margin-top: 15px; }
+  .articleListPage .inputArticlePage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .articleListPage select {
+    width: 150px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    background-color: #11609a; }
+  .articleListPage .btnNewArticle {
+    text-align: center;
+    border: 1px solid #1a4577;
+    height: 30px;
+    width: 250px;
+    border-radius: 15px;
+    font-weight: 600; }
+    .articleListPage .btnNewArticle a {
+      color: #1a4577;
+      text-decoration: none; }
+  .articleListPage i {
+    margin-left: 15px;
+    font-size: 18px; }
+
+.addArticlePage {
+  color: white;
+  width: 50%;
+  margin-top: 15px;
+  text-align: center;
+  background-color: #11609a;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .addArticlePage h5 {
+    margin-top: 15px;
+    font-weight: 700; }
+  .addArticlePage label {
+    color: white; }
+  .addArticlePage .addArticleForm {
+    margin-top: 15px;
+    width: 50%;
+    align-self: center; }
+    .addArticlePage .addArticleForm input, .addArticlePage .addArticleForm .inputArticle, .addArticlePage .addArticleForm .inputImage {
+      color: white;
+      margin-top: 10px;
+      border: 1px solid white;
+      border-radius: 15px;
+      background-color: #11609a; }
+    .addArticlePage .addArticleForm .inputArticle {
+      width: 100%;
+      height: 200px; }
+    .addArticlePage .addArticleForm select {
+      color: white;
+      text-align: center;
+      width: 30%;
+      margin-top: 10px;
+      border: 1px solid white;
+      border-radius: 10px;
+      background-color: #11609a; }
+
+/*# sourceMappingURL=custom.css.map */

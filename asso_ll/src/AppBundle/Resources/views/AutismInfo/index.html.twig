@@ -1,0 +1,23 @@
+{% extends "::base.html.twig" %}
+
+
+{% block body %}
+
+
+<div class="container">
+  <h3>Articles et actualités sur l'autisme </h3>
+  {% for a in articles %}
+    <div class="imgAutismInfo">
+      <img src="{{asset('images/article/')~ a.image}}" alt="{{a.image}}" width="250px">
+    </div>
+    <h4>{{a.title}}</h4>
+
+    <p>
+      {{ a.body}}
+    </p>
+
+    <p>{{a.author}} - {{a.publiDate |date('d-m-Y') }}</p>
+  {% endfor %}
+</div>
+
+{% endblock %}

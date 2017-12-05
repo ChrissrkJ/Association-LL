@@ -1,0 +1,42 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+<div class="row adminPageHead">
+    <div class="col-md-6 avatarAdmin">
+          <a href="{{ path('indexAdmin')}}"><img src="{{asset('images/admin/avatar.png')}}" alt="avatar"></a>
+    </div>
+    <div class="col-md-6 hiAdmin">
+      <p>Bonjour <strong>nom admin</strong></p>
+    </div>
+
+</div>
+
+
+<div class="container adminPageBody">
+
+  <div class="blockAdmin">
+    <a href="{{ path('admin_list')}}" class="nav-link menuAdmin">admins</a>
+  </div>
+
+  <div class="blockArticle">
+    <a href="{{ path('article_list')}}" class="nav-link menuAdmin">articles</a>
+  </div>
+
+  <div class="blockVolunteer">
+    <a href="{{ path('volunteer_list')}}" class="nav-link menuAdmin">bénévoles</a>
+  </div>
+
+  <div class="blockFamily">
+    <a href="{{ path('family_list')}}" class="nav-link menuAdmin">familles</a>
+  </div>
+
+
+
+
+</div>
+
+
+
+
+
+{% endblock %}

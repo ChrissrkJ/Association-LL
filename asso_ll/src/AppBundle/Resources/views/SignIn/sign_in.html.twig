@@ -1,0 +1,37 @@
+{% extends "::base.html.twig" %}
+
+
+
+{% block body %}
+<div class="adminSignIn">
+
+  <div class=" jumbotron signAdminBloc">
+
+    <h1>connexion</h1>
+    <div>
+      {{ form_start (form) }}
+        <div class="form-group">
+          {{ form_label(form.email, 'email :')}}
+          {{ form_errors(form.email)}}
+          {{ form_widget(form.email,
+            {'attr':{'placeholder' : "exemple: mail@mail.fr", 'class' : 'mailInput_sia'}
+          })}}
+        </div>
+    <div class="form-group">
+      {{ form_label(form.password, 'mot de passe :')}}
+      {{ form_widget(form.password,
+        {'attr':{'placeholder' : "mot de passe", 'class' : 'passwordInput_sia'}
+      })}}
+    </div>
+    <div class="form-group">
+      {{ form_label(form.submit)}}
+      {{ form_widget(form.submit,
+        {'attr':{'class':'btn btn_sia'}}
+      )}}
+    </div>
+    {{ form_end (form) }}
+    </div>
+
+  </div>
+</div>
+{% endblock %}

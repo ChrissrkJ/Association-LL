@@ -1,0 +1,60 @@
+{% block body %}
+{% include "AppBundle:Admin:menuAdmin.html.twig" %}
+
+<div class=" container addArticlePage">
+  <h5>ajouter un article : </h5>
+
+  <div class="addArticleForm">
+    {{ form_start(form) }}
+      <div class="form-group">
+        {{ form_label(form.title, 'titre de l\'article :')}}
+        {{ form_widget(form.title)}}
+
+      </div>
+
+      <div class="form-group">
+        {{ form_label(form.body, 'article :')}}
+        {{ form_widget(form.body,
+          {'attr' : {
+          'placeholder' : " votre texte ici ... ",
+          'class' : 'inputArticle'
+          }}
+        )}}
+      </div>
+
+      <div class="form-group">
+        {{ form_label(form.publiDate, 'date de publication :')}}
+        {{ form_widget(form.publiDate, {
+        'attr' :{
+        'class' : 'inputDate'
+        }
+        })}}
+      </div>
+
+      <div class="form-group">
+        {{ form_label(form.author, 'auteur :')}}
+        {{ form_widget(form.author)}}
+
+      </div>
+
+      <div class="form-group">
+        {{ form_label(form.image, 'image à la une :')}}
+        {{ form_widget(form.image)}}
+      </div>
+
+      <div class="form-group">
+        {{ form_label(form.submit,'Valider')}}
+        {{ form_widget(form.submit,
+          {'attr':{
+          'class':'btn'
+          }}
+        )}}
+      </div>
+
+    {{ form_end (form) }}
+
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,256 @@
+*{
+  color: $dark_blue;
+}
+
+//CONNEXION
+.adminSignIn{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.signAdminBloc{
+  background-color: $dark_blue;
+  color : $white_typo;
+  margin-top: 50px;
+  width: 40%;
+  align-self: center;
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    input{
+      align-self: center;
+    }
+  }
+}
+
+.mailInput_sia, .passwordInput_sia{
+  border-radius: 20px;
+  height:35px;
+  border: 1px solid white;
+  background-color: $dark_blue;
+  text-align: center;
+  width: 50%;
+}
+
+.btn_sia{
+background-color: $mustard;
+color : $dark_blue;
+font-weight: bold;
+border-radius: 20px;
+width: 50%;
+align-self: center;
+}
+
+
+///HEADER PAGE ADMIN
+.adminPageHead{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  img{
+    width: 80px;
+  }
+  .avatarAdmin{
+    padding: 0px;
+    text-align: right;
+  }
+  .hiAdmin{
+    display: flex;
+    align-self: flex-end;
+    p{
+      margin: 0px;
+    }
+  }
+
+  .navAdmin{
+    align-self: flex-end;
+    ul {
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: flex-end;
+      li {
+        list-style: none;
+        .menuAdmin{
+          font-size: 12px;
+          padding-bottom: 0px;
+          color: $dark_blue;
+        }
+      }
+    }
+  }
+}
+
+
+  hr{
+    border: 0;
+    height: 1px;
+    background: $dark_blue;
+    background-image: linear-gradient(to right, $medium_blue, $dark_blue, $medium_blue);
+    margin-top: 5px;
+  }
+
+
+//MENU ACCEUIL ADMIN
+.adminPageBody{
+  margin-top: 15px;
+  width: 70%;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  .menuAdmin{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    padding: 0px;
+  }
+  .blockArticle{
+    background-color: $light_blue;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :hover{
+      color:$mustard;
+      font-weight: 600;
+      font-size: 30px
+    }
+  }
+  .blockVolunteer{
+    background-color: $grey_blue;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :hover{
+      color:$mustard;
+      font-weight: 600;
+      font-size: 30px
+    }
+  }
+
+  .blockFamily{
+    background-color: $medium_blue;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :hover{
+      color:$mustard;
+      font-weight: 600;
+      font-size: 30px
+    }
+  }
+
+  .blockAdmin{
+    background-color: $medium_blue;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :hover{
+      color:$mustard;
+      font-weight: 600;
+      font-size: 30px
+    }
+  }
+}
+
+//LIST ADMIN
+.listAdminTable{
+  .btnAddAdmin{
+    margin: 10px;
+    a{
+      i{
+        color: $ligth_green;
+        span{
+          font-family: 'Montserrat', sans-serif;
+          color: $ligth_green;
+        }
+      }
+    }
+  }
+
+  table{
+    th{
+      text-align: center;
+    }
+
+    tbody{
+      .tableAction {
+          display: flex;
+          justify-content: space-around;
+          color: white;
+          a{
+            :hover{
+              font-size: 20px;
+              color: $mustard;
+            }
+            i{
+              color: $dark_blue;
+              font-size: 18px;
+            }
+          }
+        }
+      td{
+
+        text-align: center;
+        img{
+          width: 50px;
+        }
+
+      }
+    }
+  }
+}
+
+///ADD ADMIN FORM
+.addAdminPage{
+  width: 50%;
+  background-color: $dark_blue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .addAdminForm{
+    padding: 20px;
+    color: $white_typo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .form-group{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+      label{
+      color: $white_typo;
+      }
+      input {
+        color: white;
+        text-align: center;
+        background-color: $dark_blue;
+        border: 1px solid white;
+        border-radius: 20px;
+        height: 40px;
+      }
+
+      .btn{
+        background-color: white;
+        border-radius: 20px;
+        color : $dark_blue;
+        font-weight: 600;
+      }
+    }
+
+}
+}
